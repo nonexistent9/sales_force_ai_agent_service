@@ -53,15 +53,15 @@ pip install -r requirements.txt
 cd sf_mcp_server || { echo "❌ sf_mcp_server folder not found"; exit 1; }
 # --- Run backend servers ---
 echo "🚀 Starting sf_mcp_server on port 3000..."
-#uvicorn sf_mcp_server:app --port 3000 &
+uvicorn sf_mcp_server:app --port 3000 &
 
 cd ../agent_api_server || { echo "❌ agent_api_server folder not found"; exit 1; }
 echo "🚀 Starting agent_api_server on port 8080..."
-#uvicorn mcp_client_fastapi:app --port 8080 &
+uvicorn mcp_client_fastapi:app --port 8080 &
 
 cd ../../frontend/autonomous_agents_webapp || { echo "❌ frontend folder not found"; exit 1; }
 # --- Setup frontend environment ---
 npm install
 # --- Start frontend ---
 echo "🚀 Starting frontend dev server..."
-#npm run dev
+npm run dev
