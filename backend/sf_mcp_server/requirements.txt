@@ -1,0 +1,11 @@
+simple-salesforce 
+python-dotenv 
+requests
+azure-identity
+aiohttp
+fastapi>=0.110
+uvicorn[standard]>=0.29
+httpx[socks,http2]
+tabulate
+azure-ai-projects
+azure-ai-agents==1.1.0b4
