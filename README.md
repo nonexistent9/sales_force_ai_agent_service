@@ -1,6 +1,6 @@
 ### Salesforce MCP Server Reference App
 
-This repository contains a reference implementation of a server that interacts with Salesforce's API and exposes the API using Model Context Protocol(MCP). It provides a FastAPI-based backend to handle user queries, manage sessions.
+This repository contains a reference implementation of a AI Agent that interacts with Salesforce Sales objects and provides answers about opportunities, leads,  and accounts. It exposes Salesforce APIs using Model Context Protocol(MCP) which consumed by MCP Client.  It provides a FastAPI-based backend to handle user queries, manage sessions and a react-based frontend for user interaction.
 
 ### Prerequisites
 
@@ -40,12 +40,13 @@ This repository contains a reference implementation of a server that interacts w
    ```
    Update the .env file with your Azure OpenAI and Foundry credentials.
 
-5. **Run Install Script**:
+5. **Run Install Script**: This will set up virtual environments, install dependencies for backend and frontend and start the servers.
    ```bash
    cd sales_force_ai_agent_service
    bash run1.sh
    ```
 
+6. **Access the Application**: Open your web browser and navigate to `http://localhost:5173` to access the frontend interface.
 
 ### Troubleshooting
 
