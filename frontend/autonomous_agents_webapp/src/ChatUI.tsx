@@ -142,7 +142,7 @@ export default function ChatUI() {
       return next;
     });
 
-    const url = `${API.startConversation(user_id)}?sid=${encodeURIComponent(user_id)}`;
+    const url = API.startConversation(user_id);
 
     try {
       const res = await fetch(url, {
